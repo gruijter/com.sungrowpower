@@ -1,0 +1,25 @@
+{
+  "title": {
+        "en": "Voltage phase 2 changed",
+        "nl": "Voltage fase 2 is veranderd1"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=meter"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_voltage.2",
+      "type": "number",
+      "title": {
+        "en": "Voltage phase 2",
+        "nl": "Voltage fase 2"
+      },
+      "example": 230
+    }
+  ]
+}

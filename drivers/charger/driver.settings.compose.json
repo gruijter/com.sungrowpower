@@ -1,0 +1,56 @@
+[
+	{
+		"type": "group",
+		"label": {
+				"en": "Car charger information",
+				"nl": "Autolader informatie"
+		},
+		"children": [
+			{
+				"id": "plantName",
+				"type": "label",
+				"label": {
+						"en": "Plant name",
+						"nl": "Plant naam"
+				},
+				"value": ""
+			},
+			{
+				"id": "plantId",
+				"type": "label",
+				"label": {
+						"en": "Plant ID",
+						"nl": "Plant ID"
+				},
+				"value": ""
+			},
+			{
+				"id": "deviceName",
+				"type": "label",
+				"label": {
+						"en": "Device name",
+						"nl": "Apparaat naam"
+				},
+				"value": ""
+			},
+			{
+				"id": "deviceModelCode",
+				"type": "label",
+				"label": {
+						"en": "Model",
+						"nl": "Model"
+				},
+				"value": ""
+			},
+			{
+				"id": "deviceSn",
+				"type": "label",
+				"label": {
+						"en": "Serial number",
+						"nl": "Serienummer"
+				},
+				"value": ""
+			}
+		]
+	}
+]

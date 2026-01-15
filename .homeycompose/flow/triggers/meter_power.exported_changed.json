@@ -1,0 +1,25 @@
+{
+  "title": {
+    "en": "Exported energy changed",
+    "nl": "Energie export is veranderd"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=meter"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "meter_power.exported",
+      "type": "number",
+      "title": {
+        "en": "Exported energy",
+        "nl": "Energie export"
+      },
+      "example": 1500
+    }
+  ]
+}

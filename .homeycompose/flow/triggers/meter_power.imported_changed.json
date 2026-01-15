@@ -1,0 +1,25 @@
+{
+  "title": {
+    "en": "Imported energy changed",
+    "nl": "Energie import is veranderd"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=meter"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "meter_power.imported",
+      "type": "number",
+      "title": {
+        "en": "Imported energy",
+        "nl": "Energie import"
+      },
+      "example": 1500
+    }
+  ]
+}

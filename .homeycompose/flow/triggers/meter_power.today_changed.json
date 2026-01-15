@@ -1,0 +1,25 @@
+{
+  "title": {
+    "en": "Energy today changed",
+    "nl": "Energie vandaag is veranderd"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=inverter"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "meter_power.today",
+      "type": "number",
+      "title": {
+        "en": "Energy today",
+        "nl": "Energie vandaag"
+      },
+      "example": 1500
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "com.sungrowpower",
+  "version": "1.0.2",
+  "compatibility": ">=12.9.0",
+  "sdk": 3,
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "Sungrow"
+  },
+  "description": {
+    "en": "Clean Power for All."
+  },
+  "brandColor": "#ff7900",
+  "tags": {
+    "en": [
+      "sungrow",
+      "isolar",
+      "isolarcloud",
+      "Inverter",
+      "Solar",
+      "Solar panels",
+      "PV"
+    ],
+    "nl": [
+      "sungrow",
+      "isolar",
+      "isolarcloud",
+      "Omvormer",
+      "Zonnepanelen",
+      "PV"
+    ]
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "R.M. de Gruijter"
+  },
+  "copyright": "R.M. de Gruijter (rmdegruijter@gmail.com)",
+  "license": "GPL-3.0-or-later",
+  "homeyCommunityTopicId": 137603,
+  "support": "https://github.com/gruijter/com.sungrowpower/issues"
+}

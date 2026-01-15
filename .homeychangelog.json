@@ -1,0 +1,12 @@
+{
+  "1.0.2": {
+    "en": "Homey compatibility =>12.9.0. Removed node-fetch dependency. Single plant selection during pair."
+  },
+  "1.0.1": {
+    "en": "Fixed Homey Cloud and HP2026/2019 compatibility. Updated icons."
+  },
+  "1.0.0": {
+    "en": "Initial release"
+  }
+}
+
