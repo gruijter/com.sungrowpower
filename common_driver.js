@@ -29,9 +29,107 @@ module.exports = class MyBrandDriver extends OAuth2Driver {
     this.log('Inverter driver has been initialized with OAuth2');
   }
 
+  /**
+   * Custom pair flow with a region picker.
+   *
+   * The stock OAuth2Driver.onPair() captures the configId and builds the pair client up-front,
+   * so it can't switch regions mid-flow. We reimplement the (single-session) OAuth2 code flow
+   * here and add a `set_region` handler that rebuilds the pair client against the chosen config
+   * before the login_oauth2 view requests an authorization URL.
+   * @param {PairSession} socket
+   */
+  onPair(socket) {
+    let configId = this.getOAuth2ConfigId(); // 'default' (EU) until the user picks a region
+    let sessionId = null;
+    let client;
+
+    const newPairClient = () => {
+      if (client) {
+        try {
+          client.destroy();
+        } catch (err) {
+          this.error(err);
+        }
+      }
+      client = this.homey.app.createOAuth2Client({
+        sessionId: `pair-${Date.now()}-${Math.round(Math.random() * 1e9)}`,
+        configId,
+      });
+    };
+    newPairClient();
+
+    const onSetRegion = async (regionId) => {
+      if (!this.homey.app.hasConfig({ configId: regionId })) {
+        throw new Error(`Unknown region: ${regionId}`);
+      }
+      configId = regionId;
+      this.log(`Pairing region selected: ${configId}`);
+      newPairClient();
+      return true;
+    };
+
+    const onShowViewLoginOAuth2 = async () => {
+      try {
+        const authorizationUrl = client.getAuthorizationUrl();
+        const oAuth2Callback = await this.homey.cloud.createOAuth2Callback(authorizationUrl);
+        oAuth2Callback
+          .on('url', (url) => socket.emit('url', url).catch(this.error))
+          .on('code', (code) => {
+            client.getTokenByCode({ code })
+              .then(async () => {
+                const session = await client.onGetOAuth2SessionInformation();
+                const token = client.getToken();
+                const { title } = session;
+                sessionId = session.id;
+
+                // Swap the temporary pair client for the final, persistable one
+                client.destroy();
+                client = this.homey.app.createOAuth2Client({ sessionId, configId });
+                client.setTitle({ title });
+                client.setToken({ token });
+
+                socket.emit('authorized').catch(this.error);
+              })
+              .catch((err) => socket.emit('error', err.message || err.toString()).catch(this.error));
+          });
+      } catch (err) {
+        socket.emit('error', err.message || err.toString()).catch(this.error);
+      }
+    };
+
+    const onShowView = async (viewId) => {
+      if (viewId === 'login_oauth2') await onShowViewLoginOAuth2();
+    };
+
+    const onListDevices = async () => {
+      const devices = await this.onPairListDevices({ oAuth2Client: client });
+      return devices.map((device) => ({
+        ...device,
+        store: {
+          ...device.store,
+          OAuth2SessionId: sessionId,
+          OAuth2ConfigId: configId,
+        },
+      }));
+    };
+
+    const onAddDevice = async () => {
+      this.log(`At least one device has been added, saving the '${configId}' client...`);
+      client.save();
+    };
+
+    socket
+      .setHandler('set_region', onSetRegion)
+      .setHandler('showView', onShowView)
+      .setHandler('list_devices', onListDevices)
+      .setHandler('add_device', onAddDevice)
+      .setHandler('disconnect', async () => this.log('Pair session disconnected'));
+  }
+
   async onPairListDevices({ oAuth2Client }) {
     const devices = [];
     const result = await oAuth2Client.getPlantList().catch(this.error);
+    this.log('getPlantList raw result:', JSON.stringify(result)); // TEMP DEBUG
     // console.dir(result, { depth: null });
     if (!result || !result.result_data || !result.result_data.pageList) return devices;
     const validTypes = Object.keys(sungrowPointMap[`${this.id}Points`]);
