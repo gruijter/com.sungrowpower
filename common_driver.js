@@ -129,8 +129,6 @@ module.exports = class MyBrandDriver extends OAuth2Driver {
   async onPairListDevices({ oAuth2Client }) {
     const devices = [];
     const result = await oAuth2Client.getPlantList().catch(this.error);
-    this.log('getPlantList raw result:', JSON.stringify(result)); // TEMP DEBUG
-    // console.dir(result, { depth: null });
     if (!result || !result.result_data || !result.result_data.pageList) return devices;
     const validTypes = Object.keys(sungrowPointMap[`${this.id}Points`]);
     const sites = result.result_data.pageList;
