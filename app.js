@@ -31,7 +31,7 @@ module.exports = class SungrowApp extends OAuth2App {
   // static OAUTH2_DRIVERS = ['inverter', 'battery']; // Default: all drivers
 
   async onOAuth2Init() {
-    this.everyXminutes(1); // start time trigger emitter
+    this.everyXminutes(5); // start time trigger emitter
     this.log('Sungrow app has been initialized with OAuth2');
   }
 
