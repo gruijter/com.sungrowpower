@@ -7,6 +7,7 @@
   "capabilities": [
     "measure_power",
     "measure_battery",
+    "measure_temperature",
     "meter_power.charged",
     "meter_power.discharged"
   ],
