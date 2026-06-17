@@ -45,9 +45,6 @@ const REGIONS = [
     configId: 'au', name: 'Australia', apiUrl: 'https://augateway.isolarcloud.com', authHost: 'auweb3.isolarcloud.com', cloudId: '7',
   },
   {
-    configId: 'cn', name: 'China', apiUrl: 'https://gateway.isolarcloud.com', authHost: 'web3.isolarcloud.com.cn', cloudId: '1',
-  },
-  {
     configId: 'intl', name: 'International', apiUrl: 'https://gateway.isolarcloud.com.hk', authHost: 'web3.isolarcloud.com.hk', cloudId: '2',
   },
 ];
