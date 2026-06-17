@@ -233,6 +233,7 @@
       "capabilities": [
         "measure_power",
         "measure_battery",
+        "measure_temperature",
         "meter_power.charged",
         "meter_power.discharged"
       ],
@@ -488,7 +489,8 @@
       "capabilities": [
         "measure_power",
         "meter_power",
-        "meter_power.today"
+        "meter_power.today",
+        "measure_temperature"
       ],
       "capabilitiesOptions": {
         "meter_power.month": {

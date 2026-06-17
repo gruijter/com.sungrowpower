@@ -25,6 +25,10 @@ const SungrowOAuth2Client = require('./lib/SungrowOAuth2Client');
 
 const REDIRECT_URL = 'https://callback.athom.com/oauth2/callback/';
 
+const getEnv = (key) => {
+  return (Homey.env && key in Homey.env) ? Homey.env[key] : undefined;
+};
+
 // iSolarCloud runs parallel regional stacks, each with its own API gateway + web authorization
 // host and a numeric cloudId that the authorization page uses to route to the correct cloud.
 // Gateways come from the iSolarCloud OpenAPI server list; auth hosts + cloudIds are confirmed
@@ -75,11 +79,11 @@ module.exports = class SungrowApp extends OAuth2App {
   registerRegionConfigs() {
     const buildConfig = (region) => {
       const suffix = region.configId.toUpperCase();
-      const cloudId = Homey.env[`CLOUD_ID_${suffix}`] || region.cloudId;
-      const applicationId = Homey.env[`APPLICATION_ID_${suffix}`] || region.applicationId || Homey.env.APPLICATION_ID || Homey.env.APPLICATION_ID_EU;
+      const cloudId = getEnv(`CLOUD_ID_${suffix}`) || region.cloudId;
+      const applicationId = getEnv(`APPLICATION_ID_${suffix}`) || region.applicationId || getEnv('APPLICATION_ID') || getEnv('APPLICATION_ID_EU');
       return {
-        clientId: Homey.env[`CLIENT_ID_${suffix}`] || Homey.env.CLIENT_ID || Homey.env.CLIENT_ID_EU,
-        clientSecret: Homey.env[`CLIENT_SECRET_${suffix}`] || Homey.env.CLIENT_SECRET || Homey.env.CLIENT_SECRET_EU,
+        clientId: getEnv(`CLIENT_ID_${suffix}`) || getEnv('CLIENT_ID') || getEnv('CLIENT_ID_EU'),
+        clientSecret: getEnv(`CLIENT_SECRET_${suffix}`) || getEnv('CLIENT_SECRET') || getEnv('CLIENT_SECRET_EU'),
         apiUrl: region.apiUrl,
         tokenUrl: `${region.apiUrl}/openapi/apiManage/token`,
         authorizationUrl: `https://${region.authHost}/#/authorized-app?cloudId=${cloudId}&applicationId=${applicationId}&redirectUrl=${REDIRECT_URL}`,
