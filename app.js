@@ -79,10 +79,10 @@ module.exports = class SungrowApp extends OAuth2App {
     const buildConfig = (region) => {
       const suffix = region.configId.toUpperCase();
       const cloudId = Homey.env[`CLOUD_ID_${suffix}`] || region.cloudId;
-      const applicationId = Homey.env[`APPLICATION_ID_${suffix}`] || region.applicationId;
+      const applicationId = Homey.env[`APPLICATION_ID_${suffix}`] || region.applicationId || Homey.env.APPLICATION_ID || Homey.env.APPLICATION_ID_EU;
       return {
-        clientId: Homey.env[`CLIENT_ID_${suffix}`] || Homey.env.CLIENT_ID,
-        clientSecret: Homey.env[`CLIENT_SECRET_${suffix}`] || Homey.env.CLIENT_SECRET,
+        clientId: Homey.env[`CLIENT_ID_${suffix}`] || Homey.env.CLIENT_ID || Homey.env.CLIENT_ID_EU,
+        clientSecret: Homey.env[`CLIENT_SECRET_${suffix}`] || Homey.env.CLIENT_SECRET || Homey.env.CLIENT_SECRET_EU,
         apiUrl: region.apiUrl,
         tokenUrl: `${region.apiUrl}/openapi/apiManage/token`,
         authorizationUrl: `https://${region.authHost}/#/authorized-app?cloudId=${cloudId}&applicationId=${applicationId}&redirectUrl=${REDIRECT_URL}`,
