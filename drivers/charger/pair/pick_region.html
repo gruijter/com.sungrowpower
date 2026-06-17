@@ -1,0 +1,55 @@
+<script type="text/javascript">
+  // iSolarCloud regions. The id must match a configId registered in app.js (registerRegionConfigs).
+  var REGIONS = [
+    { id: 'eu', name: 'Europe', host: 'gateway.isolarcloud.eu' },
+    { id: 'au', name: 'Australia', host: 'augateway.isolarcloud.com' },
+    { id: 'cn', name: 'China', host: 'gateway.isolarcloud.com' },
+    { id: 'intl', name: 'International', host: 'gateway.isolarcloud.com.hk' }
+  ];
+
+  function selectRegion(regionId, button) {
+    var buttons = document.querySelectorAll('button[data-region]');
+    buttons.forEach(function (b) { b.disabled = true; });
+    button.classList.add('is-loading');
+
+    Homey.emit('set_region', regionId, function (err) {
+      if (err) {
+        button.classList.remove('is-loading');
+        buttons.forEach(function (b) { b.disabled = false; });
+        return Homey.alert(err.message || err.toString(), 'error');
+      }
+      Homey.showView('login_oauth2');
+    });
+  }
+
+  function renderRegions() {
+    var container = document.getElementById('regions');
+    REGIONS.forEach(function (region) {
+      var button = document.createElement('button');
+      button.className = 'homey-button-primary-full';
+      button.style.marginBottom = '8px';
+      button.setAttribute('data-region', region.id);
+      button.innerHTML = '<b>' + region.name + '</b><br><small>' + region.host + '</small>';
+      button.onclick = function () { selectRegion(region.id, button); };
+      container.appendChild(button);
+    });
+  }
+
+  Homey.setTitle('Select your region');
+  Homey.emit('get_status', function (err, status) {
+    if (err) {
+      return Homey.alert(err.message || err.toString(), 'error');
+    }
+    if (status && status.hasExistingSession) {
+      Homey.showView('login_oauth2');
+    } else {
+      renderRegions();
+      Homey.ready();
+    }
+  });
+</script>
+
+<div class="homey-form-group">
+  <p class="homey-text">Choose the iSolarCloud region your account belongs to. This determines which gateway and login page is used.</p>
+</div>
+<div id="regions"></div>

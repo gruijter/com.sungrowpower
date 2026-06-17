@@ -35,6 +35,12 @@
   },
   "pair": [
     {
+      "id": "pick_region",
+      "navigation": {
+        "next": "login_oauth2"
+      }
+    },
+    {
       "id": "login_oauth2",
       "template": "login_oauth2",
       "options": {
