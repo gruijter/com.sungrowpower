@@ -1,0 +1,2 @@
+Podłącz swój falownik Sungrow do Homey i uzyskaj szczegółowe informacje na temat produkcji energii słonecznej oraz zużycia baterii.
+Monitoruj bieżącą moc wyjściową, a także generację dzienną, miesięczną, roczną i całkowitą. Dzięki aplikacji Sungrow dla Homey możesz wykorzystać te dane do optymalizacji zużycia energii, tworzenia przepływów (Flows) i śledzenia wydajności swojego systemu – wszystko w jednym miejscu.
