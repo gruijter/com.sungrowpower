@@ -62,7 +62,7 @@ module.exports = class SungrowApp extends OAuth2App {
 
   async onOAuth2Init() {
     this.registerRegionConfigs();
-    this.everyXminutes(5); // start time trigger emitter
+    this.everyXminutes(2); // start time trigger emitter
     this.log('Sungrow app has been initialized with OAuth2');
   }
 
