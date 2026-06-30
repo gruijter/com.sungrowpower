@@ -107,14 +107,15 @@ module.exports = class SungrowApp extends OAuth2App {
 
   async onOAuth2Uninit() {
     this.log('app onUninit called');
-    this.homey.clearTimeout(this.everyXminutesHandler); // Clear the timeout if it exists
+    if (this._everyXminutesTimeoutId) {
+      this.homey.clearTimeout(this._everyXminutesTimeoutId);
+    }
   }
 
   everyXminutes(interval) {
-    let timeoutId;
     const scheduleNextXminutes = () => {
-      if (timeoutId) {
-        this.homey.clearTimeout(timeoutId); // Clear any existing timeout
+      if (this._everyXminutesTimeoutId) {
+        this.homey.clearTimeout(this._everyXminutesTimeoutId); // Clear any existing timeout
       }
       const now = new Date();
       const nextXminutes = new Date(now);
@@ -123,7 +124,7 @@ module.exports = class SungrowApp extends OAuth2App {
       nextXminutes.setMinutes(nextMultipleOfX, 0, 0);
       const timeToNextXminutes = nextXminutes - now;
       // console.log('everyXminutes starts in', timeToNextXminutes / 1000);
-      timeoutId = this.homey.setTimeout(() => {
+      this._everyXminutesTimeoutId = this.homey.setTimeout(() => {
         this.everyXminutesHandler().catch((error) => this.error(error));
         scheduleNextXminutes(); // Schedule the next X minutes
       }, timeToNextXminutes);

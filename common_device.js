@@ -82,7 +82,7 @@ module.exports = class MyDevice extends OAuth2Device {
     const dly = delay || 1000 * 5;
     this.log(`Device will restart in ${dly / 1000} seconds`);
     await setTimeoutPromise(dly);
-    this.onInit().catch((error) => this.error(error));
+    this.onOAuth2Init().catch((error) => this.error(error));
   }
 
   async setCapability(capability, value) {
