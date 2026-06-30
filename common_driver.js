@@ -41,25 +41,9 @@ module.exports = class MyBrandDriver extends OAuth2Driver {
    * @param {PairSession} socket
    */
   onPair(socket) {
-    const savedSessions = this.homey.app.getSavedOAuth2Sessions();
-    let hasExistingSession = Object.keys(savedSessions).length > 0;
-
     let configId = this.getOAuth2ConfigId(); // 'default' (EU) until the user picks a region
     let sessionId = null;
     let client;
-
-    if (hasExistingSession) {
-      sessionId = Object.keys(savedSessions)[0];
-      configId = savedSessions[sessionId].configId || 'default';
-      this.log(`Reusing existing session: ${sessionId} (configId: ${configId})`);
-      try {
-        client = this.homey.app.getOAuth2Client({ configId, sessionId });
-      } catch (err) {
-        this.error('Failed to get existing client, creating a new pair client:', err);
-        hasExistingSession = false;
-        sessionId = null;
-      }
-    }
 
     const newPairClient = () => {
       if (client) {
@@ -75,15 +59,7 @@ module.exports = class MyBrandDriver extends OAuth2Driver {
       });
     };
 
-    if (!hasExistingSession) {
-      newPairClient();
-    }
-
-    const onGetStatus = async () => {
-      return {
-        hasExistingSession,
-      };
-    };
+    newPairClient();
 
     const onSetRegion = async (regionId) => {
       if (!this.homey.app.hasConfig({ configId: regionId })) {
@@ -96,10 +72,6 @@ module.exports = class MyBrandDriver extends OAuth2Driver {
     };
 
     const onShowViewLoginOAuth2 = async () => {
-      if (hasExistingSession && sessionId) {
-        socket.emit('authorized').catch(this.error);
-        return;
-      }
       try {
         const authorizationUrl = client.getAuthorizationUrl();
         const oAuth2Callback = await this.homey.cloud.createOAuth2Callback(authorizationUrl);
@@ -150,7 +122,6 @@ module.exports = class MyBrandDriver extends OAuth2Driver {
     };
 
     socket
-      .setHandler('get_status', onGetStatus)
       .setHandler('set_region', onSetRegion)
       .setHandler('showView', onShowView)
       .setHandler('list_devices', onListDevices)

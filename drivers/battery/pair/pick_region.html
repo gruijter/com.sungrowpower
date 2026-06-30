@@ -17,7 +17,7 @@
         buttons.forEach(function (b) { b.disabled = false; });
         return Homey.alert(err.message || err.toString(), 'error');
       }
-      Homey.showView('login_oauth2');
+      Homey.nextView();
     });
   }
 
@@ -35,17 +35,8 @@
   }
 
   Homey.setTitle('Select your region');
-  Homey.emit('get_status', function (err, status) {
-    if (err) {
-      return Homey.alert(err.message || err.toString(), 'error');
-    }
-    if (status && status.hasExistingSession) {
-      Homey.showView('login_oauth2');
-    } else {
-      renderRegions();
-      Homey.ready();
-    }
-  });
+  renderRegions();
+  Homey.ready();
 </script>
 
 <div class="homey-form-group">

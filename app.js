@@ -57,7 +57,7 @@ module.exports = class SungrowApp extends OAuth2App {
 
   static OAUTH2_CLIENT = SungrowOAuth2Client; // Default: OAuth2Client
   static OAUTH2_DEBUG = true; // Default: false
-  static OAUTH2_MULTI_SESSION = false; // Default: false
+  static OAUTH2_MULTI_SESSION = true; // Default: false
   // static OAUTH2_DRIVERS = ['inverter', 'battery']; // Default: all drivers
 
   async onOAuth2Init() {
