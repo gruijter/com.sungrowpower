@@ -17,6 +17,8 @@ You should have received a copy of the GNU General Public License
 along with com.sungrowpower.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+/* eslint-disable camelcase */
+
 'use strict';
 
 const { OAuth2Driver } = require('homey-oauth2app');
@@ -161,7 +163,11 @@ module.exports = class MyBrandDriver extends OAuth2Driver {
     const result = await oAuth2Client.getPlantList().catch(this.error);
     if (!result || !result.result_data || !result.result_data.pageList) return devices;
     const validTypes = Object.keys(sungrowPointMap[`${this.id}Points`]);
-    const sites = result.result_data.pageList;
+    const token = oAuth2Client.getToken();
+    let sites = result.result_data.pageList;
+    if (token && Array.isArray(token.auth_ps_list)) {
+      sites = sites.filter((site) => token.auth_ps_list.includes(site.ps_id.toString()));
+    }
     const plantPointIdList = sungrowPointMap[`${this.id}Points`]['plant'];
     for (const site of sites) {
       // get plant data

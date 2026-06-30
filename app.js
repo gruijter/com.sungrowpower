@@ -23,7 +23,7 @@ const Homey = require('homey');
 const { OAuth2App } = require('homey-oauth2app');
 const SungrowOAuth2Client = require('./lib/SungrowOAuth2Client');
 
-const REDIRECT_URL = 'https://callback.athom.com/oauth2/callback/';
+const REDIRECT_URL = 'https://gruijter.github.io/sungrow-oauth-redirect/';
 
 const getEnv = (key) => {
   return (Homey.env && key in Homey.env) ? Homey.env[key] : undefined;
@@ -62,7 +62,7 @@ module.exports = class SungrowApp extends OAuth2App {
 
   async onOAuth2Init() {
     this.registerRegionConfigs();
-    this.everyXminutes(2); // start time trigger emitter
+    this.everyXminutes(5); // start time trigger emitter
     this.log('Sungrow app has been initialized with OAuth2');
   }
 
@@ -86,7 +86,7 @@ module.exports = class SungrowApp extends OAuth2App {
         clientSecret: getEnv(`CLIENT_SECRET_${suffix}`) || getEnv('CLIENT_SECRET') || getEnv('CLIENT_SECRET_EU'),
         apiUrl: region.apiUrl,
         tokenUrl: `${region.apiUrl}/openapi/apiManage/token`,
-        authorizationUrl: `https://${region.authHost}/#/authorized-app?cloudId=${cloudId}&applicationId=${applicationId}&redirectUrl=${REDIRECT_URL}`,
+        authorizationUrl: `https://gruijter.github.io/sungrow-oauth-redirect/?authHost=${region.authHost}&cloudId=${cloudId}&applicationId=${applicationId}&redirectUrl=${REDIRECT_URL}`,
         redirectUrl: REDIRECT_URL,
       };
     };

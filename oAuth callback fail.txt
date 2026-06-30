@@ -1,0 +1,180 @@
+curl 'https://callback.athom.com/oauth2/callback/?code=EMfgmJ&state=f16f4ed2-2876-40a8-9747-b12ee010ae9a' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -b 'connect.sid=s%3AFo4aFc_0FfQEuJp1EHZAXTlQXV6Tmaus.%2BVj3VNiMWmFX9q6m%2Bz9uOLBkIxiOxDWmO5XxhTLA%2BvU' \
+  -H 'priority: u=0, i' \
+  -H 'referer: https://web3.isolarcloud.eu/' \
+  -H 'sec-ch-ua: "Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: document' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36'
+
+
+RESPONSE:
+{"success":false,"message":"Invalid State: f16f4ed2-2876-40a8-9747-b12ee010ae9a"}
+
+
+curl 'https://gateway.isolarcloud.eu/openapi/apiManage/authorize' \
+  -H '_browser_brand: chrome' \
+  -H '_browser_version: 149.0.0.0' \
+  -H '_did;' \
+  -H '_global_new_web: 1' \
+  -H '_pl: js' \
+  -H '_vc: 2026052801' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: text/plain;charset=UTF-8' \
+  -H 'origin: https://web3.isolarcloud.eu' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://web3.isolarcloud.eu/' \
+  -H 'sec-ch-ua: "Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'sys_code: 200' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36' \
+  -H 'x-access-key: 0uyf06aujq9x8ses5ywfhp94b8yu9b24' \
+  -H 'x-client-tz: GMT%2B2' \
+  -H 'x-limit-obj: UOm9atoqdQ2sbkFwtmhszsNY4Z2nTJ6XjjyV9F3sBT+00mIV3kVyK2Pkeyo5MOZXn3XB5rUop1mvnClYiyuMNjv4t10O/CwSTK65VdFtrnaNN1IOWsUrqYDtOusATufKtGGGue51r1cWt5s5k2VRNo+pupTJioe16XdHdnWgYTo=' \
+  -H 'x-random-secret-key: Ghn+sPDNSBwpgySIUKhi5YJDx+XMAAyfgivDdHwT69r4Gg18BLoV45PEi1CE1Gya1VjHs/lnlK+FrQWgCpJf134vnIj6dC06bQK1Ap9g82l4EJZE6mV9gGUrw/0cuKe6uDM7LhvljEA+2WBWjfaNKIszGRjQa5Ke4BdgRt/viAk=' \
+  -H 'x-sign-code: 0' \
+  --data-raw 'e537290c47d5b0505b819ade4a1df6a64d514b7c96b69da6113da87713e9e119623590ecadcbbc02a82c6964d398d3f48307c5d5a46d76cc0c9668ce5d8a7c87bbfba8e8c3d2d7ad8359c31ebe601242df3f52fcff3122ce4c20790343a299ef223136f2ed51ff1006c4042ae2f2a82ac88d99482067a41b046c72e1c4c8caa2f90577846476d1c6b3cfb3e9d5460b110d88f42a8b4ce1082e97b8102a4f8a279d612c42e690237ded41ddda80d7707a8ba48c2e631e28c1917330b252915ce365d59cb71a184ad9372748d8ec9a73ef73c8f1a1e9423b5bb35ecb1365db734f1d568d183844693455d83ad07de61350f00df9c94d7c98dfa7ae20e5b007febe46ee2857cae56ce8465e04a31b376d613c86bd3932ca7d24274c7996346d8a74ac385742d272fb2d490969f1e7fe781d657220770fc1241bf5a03ceb5d52298b863822474cdb2c0c7d815c2cf0cba27ca778fceb8dd642aa7ea6e16b5589daf1e67767e62e24157ef739a3f255f6672abd718510304e4b723c8399567b7f5c8b96b2d2ae8c367ca4c87ba9d5b68330aa625a500a874a8b7b1f38482384935f5f992e13b5e33d360c8eab068183997cb9c05b537529935a853d26c790162f6ba364a435b0e46940b6c345801329bf6988710d6e3dd5b70b86aeedd829886e13e260d881a45a026cc3914622c1f57ce3d8fc8e06c44b7a05e4255c02c193e0fe617feaa3c8cec617c8dc64c82f9c5cf9bf74c4db6b12830c16af76252ad31d7e84' ;
+
+RESPONSE:
+
+
+
+
+
+
+==================================
+AUTHORIZE:
+Request URL
+https://gateway.isolarcloud.eu/openapi/apiManage/authorize
+Request Method
+POST
+Status Code
+200 OK
+Remote Address
+3.77.102.75:443
+Referrer Policy
+strict-origin-when-cross-origin
+access-control-allow-credentials
+true
+access-control-allow-origin
+https://web3.isolarcloud.eu
+cache-control
+no-cache, no-store, max-age=0, must-revalidate
+content-length
+512
+content-type
+application/json;charset=UTF-8
+date
+Mon, 29 Jun 2026 10:41:13 GMT
+expires
+0
+pragma
+no-cache
+server
+istio-envoy
+strict-transport-security
+max-age=31536000 ; includeSubDomains
+vary
+Access-Control-Request-Headers
+x-content-type-options
+nosniff
+x-envoy-decorator-operation
+gateway-lb.cloud-service.svc.cluster.local:80/*
+x-envoy-upstream-service-time
+225
+x-frame-options
+DENY
+x-log-requestid
+202606292f8f40fcbf0fff28903d471a
+x-ratelimit-burst-capacity
+15
+x-ratelimit-limit
+2147483647
+x-ratelimit-remaining
+14
+x-ratelimit-remaining
+2147481098
+x-ratelimit-replenish-rate
+10
+x-ratelimit-reset
+5
+x-trace-id
+c24e9cfabec1478f804d06b4fc83c0b12071544510835462144.fhbw2
+x-xss-protection
+1; mode=block
+:authority
+gateway.isolarcloud.eu
+:method
+POST
+:path
+/openapi/apiManage/authorize
+:scheme
+https
+_browser_brand
+chrome
+_browser_version
+149.0.0.0
+_did
+_global_new_web
+1
+_pl
+js
+_vc
+2026052801
+accept
+application/json, text/plain, */*
+accept-encoding
+gzip, deflate, br, zstd
+accept-language
+nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7
+content-length
+1088
+content-type
+text/plain;charset=UTF-8
+origin
+https://web3.isolarcloud.eu
+priority
+u=1, i
+referer
+https://web3.isolarcloud.eu/
+sec-ch-ua
+"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"
+sec-ch-ua-mobile
+?0
+sec-ch-ua-platform
+"Linux"
+sec-fetch-dest
+empty
+sec-fetch-mode
+cors
+sec-fetch-site
+same-site
+sys_code
+200
+user-agent
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+x-access-key
+0uyf06aujq9x8ses5ywfhp94b8yu9b24
+x-client-tz
+GMT%2B2
+x-limit-obj
+UOm9atoqdQ2sbkFwtmhszsNY4Z2nTJ6XjjyV9F3sBT+00mIV3kVyK2Pkeyo5MOZXn3XB5rUop1mvnClYiyuMNjv4t10O/CwSTK65VdFtrnaNN1IOWsUrqYDtOusATufKtGGGue51r1cWt5s5k2VRNo+pupTJioe16XdHdnWgYTo=
+x-random-secret-key
+Ghn+sPDNSBwpgySIUKhi5YJDx+XMAAyfgivDdHwT69r4Gg18BLoV45PEi1CE1Gya1VjHs/lnlK+FrQWgCpJf134vnIj6dC06bQK1Ap9g82l4EJZE6mV9gGUrw/0cuKe6uDM7LhvljEA+2WBWjfaNKIszGRjQa5Ke4BdgRt/viAk=
+x-sign-code
+0
+
+
+
