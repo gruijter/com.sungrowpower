@@ -1,0 +1,9 @@
+{
+  "Clean Power for All.": "모두를 위한 깨끗한 에너지.",
+  "This will try to update the status of all devices immediately. Careful: too many updates will cause the server to temporarily block you.": "오늘의 장치 상태를 즉시 업데이트하도록 시도합니다. 주의: 업데이트가 너무 많으면 서버에서 일시적으로 차단될 수 있습니다.",
+  "pair.pick_region.title": "지역을 선택하십시오",
+  "pair.pick_region.intro": "계정이 속한 iSolarCloud 지역을 선택하십시오. 이에 따라 사용되는 게이트웨이 및 로그인 페이지가 결정됩니다.",
+  "pair.regions.eu": "유럽",
+  "pair.regions.au": "호주",
+  "pair.regions.intl": "국제"
+}

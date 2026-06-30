@@ -1,0 +1,9 @@
+{
+  "Clean Power for All.": "Czysta energia dla wszystkich.",
+  "This will try to update the status of all devices immediately. Careful: too many updates will cause the server to temporarily block you.": "Spowoduje to próbę natychmiastowej aktualizacji statusu wszystkich urządzeń. Uwaga: zbyt wiele aktualizacji spowoduje tymczasowe zablokowanie przez serwer.",
+  "pair.pick_region.title": "Wybierz swój region",
+  "pair.pick_region.intro": "Wybierz region iSolarCloud, do którego należy Twoje konto. Określa to, która brama i strona logowania zostaną użyte.",
+  "pair.regions.eu": "Europa",
+  "pair.regions.au": "Australia",
+  "pair.regions.intl": "Międzynarodowy"
+}

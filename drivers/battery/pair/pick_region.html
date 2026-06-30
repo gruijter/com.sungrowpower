@@ -1,9 +1,9 @@
 <script type="text/javascript">
   // iSolarCloud regions. The id must match a configId registered in app.js (registerRegionConfigs).
   var REGIONS = [
-    { id: 'eu', name: 'Europe', host: 'gateway.isolarcloud.eu' },
-    { id: 'au', name: 'Australia', host: 'augateway.isolarcloud.com' },
-    { id: 'intl', name: 'International', host: 'gateway.isolarcloud.com.hk' }
+    { id: 'eu', name: Homey.__('pair.regions.eu') || 'Europe', host: 'gateway.isolarcloud.eu' },
+    { id: 'au', name: Homey.__('pair.regions.au') || 'Australia', host: 'augateway.isolarcloud.com' },
+    { id: 'intl', name: Homey.__('pair.regions.intl') || 'International', host: 'gateway.isolarcloud.com.hk' }
   ];
 
   function selectRegion(regionId, button) {
@@ -34,12 +34,20 @@
     });
   }
 
-  Homey.setTitle('Select your region');
+  Homey.setTitle(Homey.__('pair.pick_region.title') || 'Select your region');
   renderRegions();
+
+  setTimeout(function () {
+    var el = document.getElementById('intro-text');
+    if (el) {
+      el.innerText = Homey.__('pair.pick_region.intro') || 'Choose the iSolarCloud region your account belongs to. This determines which gateway and login page is used.';
+    }
+  }, 0);
+
   Homey.ready();
 </script>
 
 <div class="homey-form-group">
-  <p class="homey-text">Choose the iSolarCloud region your account belongs to. This determines which gateway and login page is used.</p>
+  <p class="homey-text" id="intro-text"></p>
 </div>
 <div id="regions"></div>

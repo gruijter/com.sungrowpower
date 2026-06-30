@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.sungrowpower",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "compatibility": ">=12.9.0",
   "sdk": 3,
   "platforms": [
@@ -12,7 +12,18 @@
     "en": "Sungrow"
   },
   "description": {
-    "en": "Clean Power for All."
+    "en": "Clean Power for All.",
+    "de": "Saubere Energie für alle.",
+    "fr": "De l'énergie propre pour tous.",
+    "it": "Energia pulita per tutti.",
+    "es": "Energía limpia para todos.",
+    "pl": "Czysta energia dla wszystkich.",
+    "sv": "Ren el för alla.",
+    "no": "Ren strøm for alle.",
+    "da": "Ren strøm til alle.",
+    "ru": "Чистая энергия для всех.",
+    "ko": "모두를 위한 깨끗한 에너지.",
+    "ar": "طاقة نظيفة للجميع."
   },
   "brandColor": "#ff7900",
   "tags": {
@@ -55,7 +66,18 @@
       {
         "title": {
           "en": "Voltage phase 1 changed",
-          "nl": "Voltage fase 1 is veranderd1"
+          "nl": "Voltage fase 1 is veranderd",
+          "de": "Spannung Phase 1 geändert",
+          "fr": "Tension phase 1 modifiée",
+          "it": "Tensione fase 1 modificata",
+          "es": "Voltaje fase 1 cambiado",
+          "pl": "Napięcie fazy 1 uległo zmianie",
+          "sv": "Spänning fas 1 ändrad",
+          "no": "Spenning fase 1 endret",
+          "da": "Spænding fase 1 ændret",
+          "ru": "Напряжение фазы 1 изменено",
+          "ko": "전압 위상 1 변경됨",
+          "ar": "تغير جهد المرحلة 1"
         },
         "highlight": true,
         "args": [
@@ -71,7 +93,18 @@
             "type": "number",
             "title": {
               "en": "Voltage phase 1",
-              "nl": "Voltage fase 1"
+              "nl": "Voltage fase 1",
+              "de": "Spannung Phase 1",
+              "fr": "Tension phase 1",
+              "it": "Tensione fase 1",
+              "es": "Voltaje fase 1",
+              "pl": "Napięcie fazy 1",
+              "sv": "Spänning fas 1",
+              "no": "Spenning fase 1",
+              "da": "Spænding fase 1",
+              "ru": "Напряжение фазы 1",
+              "ko": "전압 위상 1",
+              "ar": "جهد المرحلة 1"
             },
             "example": 230
           }
@@ -81,7 +114,18 @@
       {
         "title": {
           "en": "Voltage phase 2 changed",
-          "nl": "Voltage fase 2 is veranderd1"
+          "nl": "Voltage fase 2 is veranderd",
+          "de": "Spannung Phase 2 geändert",
+          "fr": "Tension phase 2 modifiée",
+          "it": "Tensione fase 2 modificata",
+          "es": "Voltaje fase 2 cambiado",
+          "pl": "Napięcie fazy 2 uległo zmianie",
+          "sv": "Spänning fas 2 ändrad",
+          "no": "Spenning fase 2 endret",
+          "da": "Spænding fase 2 ændret",
+          "ru": "Напряжение фазы 2 изменено",
+          "ko": "전압 위상 2 변경됨",
+          "ar": "تغير جهد المرحلة 2"
         },
         "highlight": true,
         "args": [
@@ -97,7 +141,18 @@
             "type": "number",
             "title": {
               "en": "Voltage phase 2",
-              "nl": "Voltage fase 2"
+              "nl": "Voltage fase 2",
+              "de": "Spannung Phase 2",
+              "fr": "Tension phase 2",
+              "it": "Tensione fase 2",
+              "es": "Voltaje fase 2",
+              "pl": "Napięcie fazy 2",
+              "sv": "Spänning fas 2",
+              "no": "Spenning fase 2",
+              "da": "Spænding fase 2",
+              "ru": "Напряжение фазы 2",
+              "ko": "전압 위상 2",
+              "ar": "جهد المرحلة 2"
             },
             "example": 230
           }
@@ -107,7 +162,18 @@
       {
         "title": {
           "en": "Voltage phase 3 changed",
-          "nl": "Voltage fase 3 is veranderd1"
+          "nl": "Voltage fase 3 is veranderd",
+          "de": "Spannung Phase 3 geändert",
+          "fr": "Tension phase 3 modifiée",
+          "it": "Tensione fase 3 modificata",
+          "es": "Voltaje fase 3 cambiado",
+          "pl": "Napięcie fazy 3 uległo zmianie",
+          "sv": "Spänning fas 3 ändrad",
+          "no": "Spenning fase 3 endret",
+          "da": "Spænding fase 3 ændret",
+          "ru": "Напряжение фазы 3 изменено",
+          "ko": "전압 위상 3 변경됨",
+          "ar": "تغير جهد المرحلة 3"
         },
         "highlight": true,
         "args": [
@@ -123,7 +189,18 @@
             "type": "number",
             "title": {
               "en": "Voltage phase 3",
-              "nl": "Voltage fase 3"
+              "nl": "Voltage fase 3",
+              "de": "Spannung Phase 3",
+              "fr": "Tension phase 3",
+              "it": "Tensione fase 3",
+              "es": "Voltaje fase 3",
+              "pl": "Napięcie fazy 3",
+              "sv": "Spänning fas 3",
+              "no": "Spenning fase 3",
+              "da": "Spænding fase 3",
+              "ru": "Напряжение фазы 3",
+              "ko": "전압 위상 3",
+              "ar": "جهد المرحلة 3"
             },
             "example": 230
           }
@@ -133,7 +210,18 @@
       {
         "title": {
           "en": "Exported energy changed",
-          "nl": "Energie export is veranderd"
+          "nl": "Energie export is veranderd",
+          "de": "Exportierte Energie geändert",
+          "fr": "Énergie exportée modifiée",
+          "it": "Energia esportata modificata",
+          "es": "Energía exportada cambiada",
+          "pl": "Eksportowana energia uległa zmianie",
+          "sv": "Exporterad energi ändrad",
+          "no": "Eksportert energi endret",
+          "da": "Eksporteret energi ændret",
+          "ru": "Экспортированная энергия изменена",
+          "ko": "내보낸 에너지가 변경됨",
+          "ar": "تغيرت الطاقة المصدرة"
         },
         "highlight": true,
         "args": [
@@ -149,7 +237,18 @@
             "type": "number",
             "title": {
               "en": "Exported energy",
-              "nl": "Energie export"
+              "nl": "Energie export",
+              "de": "Exportierte Energie",
+              "fr": "Énergie exportée",
+              "it": "Energia esportata",
+              "es": "Energía exportada",
+              "pl": "Energia eksportowana",
+              "sv": "Exporterad energi",
+              "no": "Eksportert energi",
+              "da": "Exportered energy",
+              "ru": "Экспортированная энергия",
+              "ko": "내보낸 에너지",
+              "ar": "الطاقة المصدرة"
             },
             "example": 1500
           }
@@ -159,7 +258,18 @@
       {
         "title": {
           "en": "Imported energy changed",
-          "nl": "Energie import is veranderd"
+          "nl": "Energie import is veranderd",
+          "de": "Importierte Energie geändert",
+          "fr": "Énergie importée modifiée",
+          "it": "Energia importata modificata",
+          "es": "Energía importada cambiada",
+          "pl": "Importowana energia uległa zmianie",
+          "sv": "Importerad energi ändrad",
+          "no": "Importert energi endret",
+          "da": "Importeret energi ændret",
+          "ru": "Импортированная энергия изменена",
+          "ko": "가져온 에너지가 변경됨",
+          "ar": "تغيرت الطاقة المستوردة"
         },
         "highlight": true,
         "args": [
@@ -175,7 +285,18 @@
             "type": "number",
             "title": {
               "en": "Imported energy",
-              "nl": "Energie import"
+              "nl": "Energie import",
+              "de": "Importierte Energie",
+              "fr": "Énergie importée",
+              "it": "Energia importata",
+              "es": "Energía importada",
+              "pl": "Energia importowana",
+              "sv": "Importerad energi",
+              "no": "Importert energi",
+              "da": "Importeret energi",
+              "ru": "Импортированная энергия",
+              "ko": "가져온 에너지",
+              "ar": "الطاقة المستوردة"
             },
             "example": 1500
           }
@@ -185,7 +306,18 @@
       {
         "title": {
           "en": "Energy today changed",
-          "nl": "Energie vandaag is veranderd"
+          "nl": "Energie vandaag is veranderd",
+          "de": "Heutige Energie geändert",
+          "fr": "Énergie du jour modifiée",
+          "it": "Energia di oggi modificata",
+          "es": "Energía de hoy cambiada",
+          "pl": "Dzisiejsza energia uległa zmianie",
+          "sv": "Energi idag ändrad",
+          "no": "Energi i dag endret",
+          "da": "Energi i dag ændret",
+          "ru": "Энергия за сегодня изменена",
+          "ko": "오늘의 에너지가 변경됨",
+          "ar": "تغيرت طاقة اليوم"
         },
         "highlight": true,
         "args": [
@@ -201,7 +333,18 @@
             "type": "number",
             "title": {
               "en": "Energy today",
-              "nl": "Energie vandaag"
+              "nl": "Energie vandaag",
+              "de": "Energie heute",
+              "fr": "Énergie du jour",
+              "it": "Energia di oggi",
+              "es": "Energía de hoy",
+              "pl": "Dzisiejsza energia",
+              "sv": "Energi idag",
+              "no": "Energi i dag",
+              "da": "Energi i dag",
+              "ru": "Энергия за сегодня",
+              "ko": "오늘의 에너지",
+              "ar": "طاقة اليوم"
             },
             "example": 1500
           }
@@ -213,11 +356,33 @@
       {
         "title": {
           "en": "Get status update",
-          "nl": "Haal status update op"
+          "nl": "Haal status update op",
+          "de": "Status-Update anfordern",
+          "fr": "Obtenir la mise à jour du statut",
+          "it": "Ottieni aggiornamento di stato",
+          "es": "Obtener actualización de estado",
+          "pl": "Pobierz aktualizację statusu",
+          "sv": "Hämta statusuppdatering",
+          "no": "Hent statusoppdatering",
+          "da": "Hent statusopdatering",
+          "ru": "Получить обновление статуса",
+          "ko": "상태 업데이트 가져오기",
+          "ar": "الحصول على تحديث الحالة"
         },
         "hint": {
-          "en": "This will try to update the status of all devices immediately. Carefull: too many updates will cause the server to temporarily block you.",
-          "nl": "Dit zal proberen de status van alle apparaten onmiddellijk bij te werken. Let op: te veel updates zullen ervoor zorgen dat de server je tijdelijk blokkeert."
+          "en": "This will try to update the status of all devices immediately. Careful: too many updates will cause the server to temporarily block you.",
+          "nl": "Dit zal proberen de status van alle apparaten onmiddellijk bij te werken. Let op: te veel updates zullen ervoor zorgen dat de server je tijdelijk blokkeert.",
+          "de": "Dies versucht, den Status aller Geräte sofort zu aktualisieren. Achtung: Zu viele Updates führen dazu, dass der Server Sie vorübergehend blockiert.",
+          "fr": "Cela tentera de mettre à jour le statut de tous les appareils immédiatement. Attention : trop de mises à jour entraîneront un blocage temporaire par le serveur.",
+          "it": "Questo proverà ad aggiornare immediatamente lo stato di tutti i dispositivi. Attenzione: troppi aggiornamenti faranno sì che il server ti blocchi temporaneamente.",
+          "es": "Esto intentará actualizar el estado de todos los dispositivos de inmediato. Cuidado: demasiadas actualizaciones harán que el servidor te bloquee temporalmente.",
+          "pl": "Spowoduje to próbę natychmiastowej aktualizacji statusu wszystkich urządzeń. Uwaga: zbyt wiele aktualizacji spowoduje tymczasowe zablokowanie przez serwer.",
+          "sv": "Detta kommer att försöka uppdatera statusen för alla enheter omedelbart. Varning: för många uppdateringar gör att servern tillfälligt blockerar dig.",
+          "no": "Dette vil prøve å oppdatere statusen for alle enheter umiddelbart. Forsiktig: for mange oppdateringer vil føre til at serveren midlertidig blokkerer deg.",
+          "da": "Dette vil forsøge at opdatere status for alle enheder med det samme. Forsigtig: For mange opdateringer vil medføre, at serveren midlertidigt blokerer dig.",
+          "ru": "Это попытается немедленно обновить статус всех устройств. Осторожно: слишком много обновлений приведет к временной блокировке на сервере.",
+          "ko": "오늘의 장치 상태를 즉시 업데이트하도록 시도합니다. 주의: 업데이트가 너무 많으면 서버에서 일시적으로 차단될 수 있습니다.",
+          "ar": "سيحاول هذا تحديث حالة جميع الأجهزة على الفور. احذر: كثرة التحديثات ستؤدي إلى حظرك مؤقتًا من قبل الخادم."
         },
         "id": "force_poll"
       }
@@ -227,7 +392,18 @@
     {
       "name": {
         "en": "Battery",
-        "nl": "Batterij"
+        "nl": "Batterij",
+        "de": "Batterie",
+        "fr": "Batterie",
+        "it": "Batteria",
+        "es": "Batería",
+        "pl": "Akumulator",
+        "sv": "Batteri",
+        "no": "Batteri",
+        "da": "Batteri",
+        "ru": "Батарея",
+        "ko": "배터리",
+        "ar": "بطارية"
       },
       "class": "battery",
       "capabilities": [
@@ -240,12 +416,34 @@
       "capabilitiesOptions": {
         "meter_power.charged": {
           "title": {
-            "en": "Charged Energy"
+            "en": "Charged Energy",
+            "de": "Geladene Energie",
+            "fr": "Énergie chargée",
+            "it": "Energia caricata",
+            "es": "Energía cargada",
+            "pl": "Naładowana energia",
+            "sv": "Laddad energi",
+            "no": "Ladet energi",
+            "da": "Opladet energi",
+            "ru": "Заряженная энергия",
+            "ko": "충전된 에너지",
+            "ar": "الطاقة المشحونة"
           }
         },
         "meter_power.discharged": {
           "title": {
-            "en": "Discharged Energy"
+            "en": "Discharged Energy",
+            "de": "Entladene Energie",
+            "fr": "Énergie déchargée",
+            "it": "Energia scaricata",
+            "es": "Energía descargada",
+            "pl": "Rozładowana energia",
+            "sv": "Urladdad energi",
+            "no": "Utladet energi",
+            "da": "Afladet energi",
+            "ru": "Разряженная энергия",
+            "ko": "방전된 에너지",
+            "ar": "الطاقة المفرغة"
           }
         }
       },
@@ -305,7 +503,18 @@
           "type": "group",
           "label": {
             "en": "Meter information",
-            "nl": "Meter informatie"
+            "nl": "Meter informatie",
+            "de": "Zählerinformationen",
+            "fr": "Informations du compteur",
+            "it": "Informazioni contatore",
+            "es": "Información del medidor",
+            "pl": "Informacje o liczniku",
+            "sv": "Mätarinformation",
+            "no": "Målerinformasjon",
+            "da": "Målerinformation",
+            "ru": "Информация о счетчике",
+            "ko": "계량기 정보",
+            "ar": "معلومات العداد"
           },
           "children": [
             {
@@ -313,7 +522,18 @@
               "type": "label",
               "label": {
                 "en": "Plant name",
-                "nl": "Plant naam"
+                "nl": "Plant naam",
+                "de": "Anlagenname",
+                "fr": "Nom de l'installation",
+                "it": "Nome impianto",
+                "es": "Nombre de la planta",
+                "pl": "Nazwa instalacji",
+                "sv": "Anläggningsnamn",
+                "no": "Anleggsnavn",
+                "da": "Anlægsnavn",
+                "ru": "Название станции",
+                "ko": "발전소 이름",
+                "ar": "اسم المحطة"
               },
               "value": ""
             },
@@ -322,7 +542,18 @@
               "type": "label",
               "label": {
                 "en": "Plant ID",
-                "nl": "Plant ID"
+                "nl": "Plant ID",
+                "de": "Anlagen-ID",
+                "fr": "ID de l'installation",
+                "it": "ID impianto",
+                "es": "ID de la planta",
+                "pl": "ID instalacji",
+                "sv": "Anläggnings-ID",
+                "no": "Anleggs-ID",
+                "da": "Anlægs-ID",
+                "ru": "ID станции",
+                "ko": "발전소 ID",
+                "ar": "معرف المحطة"
               },
               "value": ""
             },
@@ -331,7 +562,18 @@
               "type": "label",
               "label": {
                 "en": "Device name",
-                "nl": "Apparaat naam"
+                "nl": "Apparaat naam",
+                "de": "Gerätename",
+                "fr": "Nom de l'appareil",
+                "it": "Nome dispositivo",
+                "es": "Nombre del dispositivo",
+                "pl": "Nazwa urządzenia",
+                "sv": "Enhetsnamn",
+                "no": "Enhetsnavn",
+                "da": "Enhedsnavn",
+                "ru": "Название устройства",
+                "ko": "장치 이름",
+                "ar": "اسم الجهاز"
               },
               "value": ""
             },
@@ -340,7 +582,18 @@
               "type": "label",
               "label": {
                 "en": "Model",
-                "nl": "Model"
+                "nl": "Model",
+                "de": "Modell",
+                "fr": "Modèle",
+                "it": "Modello",
+                "es": "Modelo",
+                "pl": "Model",
+                "sv": "Modell",
+                "no": "Modell",
+                "da": "Model",
+                "ru": "Модель",
+                "ko": "모델",
+                "ar": "طراز"
               },
               "value": ""
             },
@@ -349,7 +602,18 @@
               "type": "label",
               "label": {
                 "en": "Serial number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "de": "Seriennummer",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "es": "Número de serie",
+                "pl": "Numer seryjny",
+                "sv": "Serienummer",
+                "no": "Serienummer",
+                "da": "Serienummer",
+                "ru": "Серийный номер",
+                "ko": "일련 번호",
+                "ar": "الرقم التسلسلي"
               },
               "value": ""
             }
@@ -360,7 +624,18 @@
     {
       "name": {
         "en": "Car charger",
-        "nl": "Autolader"
+        "nl": "Autolader",
+        "de": "Autoladestation",
+        "fr": "Borne de recharge",
+        "it": "Stazione di ricarica",
+        "es": "Cargador de coche",
+        "pl": "Ładowarka samochodowa",
+        "sv": "Elbilsladdare",
+        "no": "Elbillader",
+        "da": "Elbillader",
+        "ru": "Зарядное устройство",
+        "ko": "EV 충전기",
+        "ar": "شاحن السيارة"
       },
       "class": "evcharger",
       "capabilities": [
@@ -422,7 +697,18 @@
           "type": "group",
           "label": {
             "en": "Car charger information",
-            "nl": "Autolader informatie"
+            "nl": "Autolader informatie",
+            "de": "Ladestation-Informationen",
+            "fr": "Informations de la borne",
+            "it": "Informazioni stazione ricarica",
+            "es": "Información del cargador",
+            "pl": "Informacje o ładowarce",
+            "sv": "Elbilsladdar-information",
+            "no": "Laderinformasjon",
+            "da": "Laderinformation",
+            "ru": "Информация о зарядном устройстве",
+            "ko": "충전기 정보",
+            "ar": "معلومات الشاحن"
           },
           "children": [
             {
@@ -430,7 +716,18 @@
               "type": "label",
               "label": {
                 "en": "Plant name",
-                "nl": "Plant naam"
+                "nl": "Plant naam",
+                "de": "Anlagenname",
+                "fr": "Nom de l'installation",
+                "it": "Nome impianto",
+                "es": "Nombre de la planta",
+                "pl": "Nazwa instalacji",
+                "sv": "Anläggningsnamn",
+                "no": "Anleggsnavn",
+                "da": "Anlægsnavn",
+                "ru": "Название станции",
+                "ko": "발전소 이름",
+                "ar": "اسم المحطة"
               },
               "value": ""
             },
@@ -439,7 +736,18 @@
               "type": "label",
               "label": {
                 "en": "Plant ID",
-                "nl": "Plant ID"
+                "nl": "Plant ID",
+                "de": "Anlagen-ID",
+                "fr": "ID de l'installation",
+                "it": "ID impianto",
+                "es": "ID de la planta",
+                "pl": "ID instalacji",
+                "sv": "Anläggnings-ID",
+                "no": "Anleggs-ID",
+                "da": "Anlægs-ID",
+                "ru": "ID станции",
+                "ko": "발전소 ID",
+                "ar": "معرف المحطة"
               },
               "value": ""
             },
@@ -448,7 +756,18 @@
               "type": "label",
               "label": {
                 "en": "Device name",
-                "nl": "Apparaat naam"
+                "nl": "Apparaat naam",
+                "de": "Gerätename",
+                "fr": "Nom de l'appareil",
+                "it": "Nome dispositivo",
+                "es": "Nombre del dispositivo",
+                "pl": "Nazwa urządzenia",
+                "sv": "Enhetsnamn",
+                "no": "Enhetsnavn",
+                "da": "Enhedsnavn",
+                "ru": "Название устройства",
+                "ko": "장치 이름",
+                "ar": "اسم الجهاز"
               },
               "value": ""
             },
@@ -457,7 +776,18 @@
               "type": "label",
               "label": {
                 "en": "Model",
-                "nl": "Model"
+                "nl": "Model",
+                "de": "Modell",
+                "fr": "Modèle",
+                "it": "Modello",
+                "es": "Modelo",
+                "pl": "Model",
+                "sv": "Modell",
+                "no": "Modell",
+                "da": "Model",
+                "ru": "Модель",
+                "ko": "모델",
+                "ar": "طراز"
               },
               "value": ""
             },
@@ -466,7 +796,18 @@
               "type": "label",
               "label": {
                 "en": "Serial number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "de": "Seriennummer",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "es": "Número de serie",
+                "pl": "Numer seryjny",
+                "sv": "Serienummer",
+                "no": "Serienummer",
+                "da": "Serienummer",
+                "ru": "Серийный номер",
+                "ko": "일련 번호",
+                "ar": "الرقم التسلسلي"
               },
               "value": ""
             }
@@ -477,7 +818,18 @@
     {
       "name": {
         "en": "Solar inverter",
-        "nl": "PV omvormer"
+        "nl": "PV omvormer",
+        "de": "Solar-Wechselrichter",
+        "fr": "Onduleur solaire",
+        "it": "Inverter solare",
+        "es": "Inversor solar",
+        "pl": "Inwerter fotowoltaiczny",
+        "sv": "Solcellsväxelriktare",
+        "no": "Solcellevekselretter",
+        "da": "Solcelleinverter",
+        "ru": "Солнечный инвертор",
+        "ko": "태양광 인버터",
+        "ar": "عاكس شمسي"
       },
       "class": "solarpanel",
       "capabilities": [
@@ -490,13 +842,35 @@
         "meter_power.month": {
           "title": {
             "en": "Energy this month",
-            "nl": "Energie deze maand"
+            "nl": "Energie deze maand",
+            "de": "Energie diesen Monat",
+            "fr": "Énergie du mois",
+            "it": "Energia di questo mese",
+            "es": "Energía de este mes",
+            "pl": "Energia w tym miesiącu",
+            "sv": "Energi denna månad",
+            "no": "Energi denne måneden",
+            "da": "Energi denne måned",
+            "ru": "Энергия за этот месяц",
+            "ko": "이번 달 에너지",
+            "ar": "طاقة هذا الشهر"
           }
         },
         "meter_power.today": {
           "title": {
             "en": "Energy today",
-            "nl": "Energie vandaag"
+            "nl": "Energie vandaag",
+            "de": "Energie heute",
+            "fr": "Énergie du jour",
+            "it": "Energia di oggi",
+            "es": "Energía de hoy",
+            "pl": "Dzisiejsza energia",
+            "sv": "Energi idag",
+            "no": "Energi i dag",
+            "da": "Energi i dag",
+            "ru": "Энергия за сегодня",
+            "ko": "오늘의 에너지",
+            "ar": "طاقة اليوم"
           }
         }
       },
@@ -551,7 +925,18 @@
           "type": "group",
           "label": {
             "en": "Inverter information",
-            "nl": "Omvormer informatie"
+            "nl": "Omvormer informatie",
+            "de": "Wechselrichterinformationen",
+            "fr": "Informations de l'onduleur",
+            "it": "Informazioni inverter",
+            "es": "Información del inversor",
+            "pl": "Informacje o inwerterze",
+            "sv": "Växelriktar-information",
+            "no": "Vekselretter-informasjon",
+            "da": "Inverterinformation",
+            "ru": "Информация об инверторе",
+            "ko": "인버터 정보",
+            "ar": "معلومات العاكس"
           },
           "children": [
             {
@@ -559,7 +944,18 @@
               "type": "label",
               "label": {
                 "en": "Plant name",
-                "nl": "Plant naam"
+                "nl": "Plant naam",
+                "de": "Anlagenname",
+                "fr": "Nom de l'installation",
+                "it": "Nome impianto",
+                "es": "Nombre de la planta",
+                "pl": "Nazwa instalacji",
+                "sv": "Anläggningsnamn",
+                "no": "Anleggsnavn",
+                "da": "Anlægsnavn",
+                "ru": "Название станции",
+                "ko": "발전소 이름",
+                "ar": "اسم المحطة"
               },
               "value": ""
             },
@@ -568,7 +964,18 @@
               "type": "label",
               "label": {
                 "en": "Plant ID",
-                "nl": "Plant ID"
+                "nl": "Plant ID",
+                "de": "Anlagen-ID",
+                "fr": "ID de l'installation",
+                "it": "ID impianto",
+                "es": "ID de la planta",
+                "pl": "ID instalacji",
+                "sv": "Anläggnings-ID",
+                "no": "Anleggs-ID",
+                "da": "Anlægs-ID",
+                "ru": "ID станции",
+                "ko": "발전소 ID",
+                "ar": "معرف المحطة"
               },
               "value": ""
             },
@@ -577,7 +984,18 @@
               "type": "label",
               "label": {
                 "en": "Device name",
-                "nl": "Apparaat naam"
+                "nl": "Apparaat naam",
+                "de": "Gerätename",
+                "fr": "Nom de l'appareil",
+                "it": "Nome dispositivo",
+                "es": "Nombre del dispositivo",
+                "pl": "Nazwa urządzenia",
+                "sv": "Enhetsnamn",
+                "no": "Enhetsnavn",
+                "da": "Enhedsnavn",
+                "ru": "Название устройства",
+                "ko": "장치 이름",
+                "ar": "اسم الجهاز"
               },
               "value": ""
             },
@@ -586,7 +1004,18 @@
               "type": "label",
               "label": {
                 "en": "Model",
-                "nl": "Model"
+                "nl": "Model",
+                "de": "Modell",
+                "fr": "Modèle",
+                "it": "Modello",
+                "es": "Modelo",
+                "pl": "Model",
+                "sv": "Modell",
+                "no": "Modell",
+                "da": "Model",
+                "ru": "Модель",
+                "ko": "모델",
+                "ar": "طراز"
               },
               "value": ""
             },
@@ -595,7 +1024,18 @@
               "type": "label",
               "label": {
                 "en": "Serial number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "de": "Seriennummer",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "es": "Número de serie",
+                "pl": "Numer seryjny",
+                "sv": "Serienummer",
+                "no": "Serienummer",
+                "da": "Serienummer",
+                "ru": "Серийный номер",
+                "ko": "일련 번호",
+                "ar": "الرقم التسلسلي"
               },
               "value": ""
             }
@@ -606,7 +1046,18 @@
     {
       "name": {
         "en": "Meter",
-        "nl": "Meter"
+        "nl": "Meter",
+        "de": "Zähler",
+        "fr": "Compteur",
+        "it": "Contatore",
+        "es": "Medidor",
+        "pl": "Licznik",
+        "sv": "Mätare",
+        "no": "Måler",
+        "da": "Måler",
+        "ru": "Счетчик",
+        "ko": "계량기",
+        "ar": "عداد"
       },
       "class": "sensor",
       "capabilities": [
@@ -623,32 +1074,87 @@
         "measure_voltage.1": {
           "title": {
             "en": "Voltage phase 1",
-            "nl": "Voltage fase 1"
+            "nl": "Voltage fase 1",
+            "de": "Spannung Phase 1",
+            "fr": "Tension phase 1",
+            "it": "Tensione fase 1",
+            "es": "Voltaje fase 1",
+            "pl": "Napięcie fazy 1",
+            "sv": "Spänning fas 1",
+            "no": "Spenning fase 1",
+            "da": "Spænding fase 1",
+            "ru": "Напряжение фазы 1",
+            "ko": "전압 위상 1",
+            "ar": "جهد المرحلة 1"
           }
         },
         "measure_voltage.2": {
           "title": {
             "en": "Voltage phase 2",
-            "nl": "Voltage fase 2"
+            "nl": "Voltage fase 2",
+            "de": "Spannung Phase 2",
+            "fr": "Tension phase 2",
+            "it": "Tensione fase 2",
+            "es": "Voltaje fase 2",
+            "pl": "Napięcie fazy 2",
+            "sv": "Spänning fas 2",
+            "no": "Spenning fase 2",
+            "da": "Spænding fase 2",
+            "ru": "Напряжение фазы 2",
+            "ko": "전압 위상 2",
+            "ar": "جهد المرحلة 2"
           }
         },
         "measure_voltage.3": {
           "title": {
             "en": "Voltage phase 3",
-            "nl": "Voltage fase 3"
+            "nl": "Voltage fase 3",
+            "de": "Spannung Phase 3",
+            "fr": "Tension phase 3",
+            "it": "Tensione fase 3",
+            "es": "Voltaje fase 3",
+            "pl": "Napięcie fazy 3",
+            "sv": "Spänning fas 3",
+            "no": "Spenning fase 3",
+            "da": "Spænding fase 3",
+            "ru": "Напряжение фазы 3",
+            "ko": "전압 위상 3",
+            "ar": "جهد المرحلة 3"
           }
         },
         "meter_power.imported": {
           "title": {
             "en": "Imported energy",
-            "nl": "Energie import"
+            "nl": "Energie import",
+            "de": "Importierte Energie",
+            "fr": "Énergie importée",
+            "it": "Energia importata",
+            "es": "Energía importada",
+            "pl": "Energia importowana",
+            "sv": "Importerad energi",
+            "no": "Importert energi",
+            "da": "Importeret energi",
+            "ru": "Импортированная энергия",
+            "ko": "가져온 에너지",
+            "ar": "الطاقة المستوردة"
           },
           "decimals": 2
         },
         "meter_power.exported": {
           "title": {
             "en": "Exported energy",
-            "nl": "Energie export"
+            "nl": "Energie export",
+            "de": "Exportierte Energie",
+            "fr": "Énergie exportée",
+            "it": "Energia esportata",
+            "es": "Energía exportada",
+            "pl": "Energia eksportowana",
+            "sv": "Exporterad energi",
+            "no": "Eksportert energi",
+            "da": "Exportered energy",
+            "ru": "Экспортированная энергия",
+            "ko": "내보낸 에너지",
+            "ar": "الطاقة المصدرة"
           },
           "decimals": 2
         }
@@ -709,7 +1215,18 @@
           "type": "group",
           "label": {
             "en": "Meter information",
-            "nl": "Meter informatie"
+            "nl": "Meter informatie",
+            "de": "Zählerinformationen",
+            "fr": "Informations du compteur",
+            "it": "Informazioni contatore",
+            "es": "Información del medidor",
+            "pl": "Informacje o liczniku",
+            "sv": "Mätarinformation",
+            "no": "Målerinformasjon",
+            "da": "Målerinformation",
+            "ru": "Информация о счетчике",
+            "ko": "계량기 정보",
+            "ar": "معلومات العداد"
           },
           "children": [
             {
@@ -717,7 +1234,18 @@
               "type": "label",
               "label": {
                 "en": "Plant name",
-                "nl": "Plant naam"
+                "nl": "Plant naam",
+                "de": "Anlagenname",
+                "fr": "Nom de l'installation",
+                "it": "Nome impianto",
+                "es": "Nombre de la planta",
+                "pl": "Nazwa instalacji",
+                "sv": "Anläggningsnamn",
+                "no": "Anleggsnavn",
+                "da": "Anlægsnavn",
+                "ru": "Название станции",
+                "ko": "발전소 이름",
+                "ar": "اسم المحطة"
               },
               "value": ""
             },
@@ -726,7 +1254,18 @@
               "type": "label",
               "label": {
                 "en": "Plant ID",
-                "nl": "Plant ID"
+                "nl": "Plant ID",
+                "de": "Anlagen-ID",
+                "fr": "ID de l'installation",
+                "it": "ID impianto",
+                "es": "ID de la planta",
+                "pl": "ID instalacji",
+                "sv": "Anläggnings-ID",
+                "no": "Anleggs-ID",
+                "da": "Anlægs-ID",
+                "ru": "ID станции",
+                "ko": "발전소 ID",
+                "ar": "معرف المحطة"
               },
               "value": ""
             },
@@ -735,7 +1274,18 @@
               "type": "label",
               "label": {
                 "en": "Device name",
-                "nl": "Apparaat naam"
+                "nl": "Apparaat naam",
+                "de": "Gerätename",
+                "fr": "Nom de l'appareil",
+                "it": "Nome dispositivo",
+                "es": "Nombre del dispositivo",
+                "pl": "Nazwa urządzenia",
+                "sv": "Enhetsnamn",
+                "no": "Enhetsnavn",
+                "da": "Enhedsnavn",
+                "ru": "Название устройства",
+                "ko": "장치 이름",
+                "ar": "اسم الجهاز"
               },
               "value": ""
             },
@@ -744,7 +1294,18 @@
               "type": "label",
               "label": {
                 "en": "Model",
-                "nl": "Model"
+                "nl": "Model",
+                "de": "Modell",
+                "fr": "Modèle",
+                "it": "Modello",
+                "es": "Modelo",
+                "pl": "Model",
+                "sv": "Modell",
+                "no": "Modell",
+                "da": "Model",
+                "ru": "Модель",
+                "ko": "모델",
+                "ar": "طراز"
               },
               "value": ""
             },
@@ -753,7 +1314,18 @@
               "type": "label",
               "label": {
                 "en": "Serial number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "de": "Seriennummer",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "es": "Número de serie",
+                "pl": "Numer seryjny",
+                "sv": "Serienummer",
+                "no": "Serienummer",
+                "da": "Serienummer",
+                "ru": "Серийный номер",
+                "ko": "일련 번호",
+                "ar": "الرقم التسلسلي"
               },
               "value": ""
             }

@@ -1,6 +1,6 @@
 {
   "id": "com.sungrowpower",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "compatibility": ">=12.9.0",
   "sdk": 3,
   "platforms": [
@@ -11,7 +11,18 @@
     "en": "Sungrow"
   },
   "description": {
-    "en": "Clean Power for All."
+    "en": "Clean Power for All.",
+    "de": "Saubere Energie für alle.",
+    "fr": "De l'énergie propre pour tous.",
+    "it": "Energia pulita per tutti.",
+    "es": "Energía limpia para todos.",
+    "pl": "Czysta energia dla wszystkich.",
+    "sv": "Ren el för alla.",
+    "no": "Ren strøm for alle.",
+    "da": "Ren strøm til alle.",
+    "ru": "Чистая энергия для всех.",
+    "ko": "모두를 위한 깨끗한 에너지.",
+    "ar": "طاقة نظيفة للجميع."
   },
   "brandColor": "#ff7900",
   "tags": {

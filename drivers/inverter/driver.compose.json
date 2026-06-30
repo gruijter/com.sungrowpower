@@ -1,7 +1,18 @@
 {
   "name": {
     "en": "Solar inverter",
-    "nl": "PV omvormer"
+    "nl": "PV omvormer",
+    "de": "Solar-Wechselrichter",
+    "fr": "Onduleur solaire",
+    "it": "Inverter solare",
+    "es": "Inversor solar",
+    "pl": "Inwerter fotowoltaiczny",
+    "sv": "Solcellsväxelriktare",
+    "no": "Solcellevekselretter",
+    "da": "Solcelleinverter",
+    "ru": "Солнечный инвертор",
+    "ko": "태양광 인버터",
+    "ar": "عاكس شمسي"
   },
   "class": "solarpanel",
   "capabilities": [
@@ -14,13 +25,35 @@
     "meter_power.month": {
       "title": {
         "en": "Energy this month",
-        "nl": "Energie deze maand"
+        "nl": "Energie deze maand",
+        "de": "Energie diesen Monat",
+        "fr": "Énergie du mois",
+        "it": "Energia di questo mese",
+        "es": "Energía de este mes",
+        "pl": "Energia w tym miesiącu",
+        "sv": "Energi denna månad",
+        "no": "Energi denne måneden",
+        "da": "Energi denne måned",
+        "ru": "Энергия за этот месяц",
+        "ko": "이번 달 에너지",
+        "ar": "طاقة هذا الشهر"
       }
     },
     "meter_power.today": {
       "title": {
         "en": "Energy today",
-        "nl": "Energie vandaag"
+        "nl": "Energie vandaag",
+        "de": "Energie heute",
+        "fr": "Énergie du jour",
+        "it": "Energia di oggi",
+        "es": "Energía de hoy",
+        "pl": "Dzisiejsza energia",
+        "sv": "Energi idag",
+        "no": "Energi i dag",
+        "da": "Energi i dag",
+        "ru": "Энергия за сегодня",
+        "ko": "오늘의 에너지",
+        "ar": "طاقة اليوم"
       }
     }
   },
@@ -28,7 +61,9 @@
     "local",
     "cloud"
   ],
-  "connectivity": ["cloud"],
+  "connectivity": [
+    "cloud"
+  ],
   "images": {
     "small": "{{driverAssetsPath}}/images/small.png",
     "large": "{{driverAssetsPath}}/images/large.png",
@@ -49,18 +84,18 @@
         "button": "Log-in"
       }
     },
-		{
-			"id": "list_devices",
-			"template": "list_devices",
-			"navigation": {
-				"next": "add_devices"
-			}
-		},
-		{
-			"id": "add_devices",
-			"template": "add_devices"
-		}
-	],
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
   "repair": [
     {
       "id": "login_oauth2",
