@@ -1,4 +1,7 @@
 {
+  "2.0.0": {
+    "en": "Added support for multiple accounts and regions (EU, AU, International). Fixed showing non-owned systems. Added improved rate limit handling. Added translations. Fixed minor memory leaks."
+  },
   "1.0.2": {
     "en": "Homey compatibility =>12.9.0. Removed node-fetch dependency. Single plant selection during pair."
   },
@@ -9,4 +12,3 @@
     "en": "Initial release"
   }
 }
-
